@@ -1,0 +1,284 @@
+:root {
+    --color-bronze: #e8cfa1;
+}
+
+* {
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+section {
+    padding: 40px 0;
+}
+
+/* navbar */
+
+.navbar.bg-dark {
+    background-color: #000 !important;
+}
+
+.navbar-dark {
+    color: #fff;
+}
+
+.nav-link {
+    color: inherit;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+    color: inherit;
+}
+
+.navbar-brand {
+    display: block;
+    width: 65%;
+    min-width: 225px;
+}
+
+.navbar-toggler {
+    color: #8f8f8f;
+}
+
+.social-media {
+    margin-left: 1rem;
+    text-align: center;
+    flex-direction: row;
+}
+
+.social-media>.nav-item {
+    margin-right: 1.5rem;
+}
+
+.navbar-toggler-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+@media screen and (min-width: 992px) {
+    .navbar {
+        font-size: 1.8rem;
+    }
+
+    .navbar-brand {
+        width: 50%;
+    }
+
+    .social-media>.nav-item {
+        margin-right: 0.5rem;
+    }
+}
+
+/* bronze components */
+.btn-bronze {
+    background-color: var(--color-bronze);
+    font-size: 2.2rem;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    text-transform: uppercase;
+}
+
+.btn-bronze:hover,
+.btn-bronze:active,
+.btn-bronze:focus {
+    color: #000;
+    background-color: var(--color-bronze);
+}
+
+.btn-bronze:focus,
+.btn-bronze:active {
+    box-shadow: 0 0 2px 5px rgba(255, 238, 206, 0.678);
+}
+
+.text-bronze {
+    color: var(--color-bronze) !important;
+}
+
+/* home */
+.home {
+    background-image: url(../images/home.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    min-height: 250px;
+    position: relative;
+}
+
+#background-cover {
+    position: absolute;
+    background-color: rgba(50, 39, 59, 0.43);
+    min-height: 250px;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* limousine */
+.limousine {
+    background-image: url(../images/limousine.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
+    padding: 0;
+}
+
+#back-cover {
+    min-height: 400px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+/* cars  */
+.cars {
+    background-image: url(../images/cars-bg.jpg);
+}
+
+.car-caption {
+    margin-top: 2rem;
+    text-align: center;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.car-bid {
+    font-size: 85%;
+}
+
+.my-6 {
+    margin: 4.8rem 0;
+}
+
+.contact {
+    margin-top: 5.5rem;
+}
+
+#contact-btn {
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-lg {
+    width: max-content;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+}
+
+@media screen and (min-width: 992px) {
+    #contact-btn {
+        flex-direction: row;
+    }
+}
+
+/* form */
+#form-bg {
+    background-color: #2e2e2e;
+    width: 75%;
+    margin: auto;
+}
+
+.form-head {
+    padding: 1.3rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+.accordion-item {
+    background-color: inherit !important;
+}
+
+.accordion-button {
+    background-color: #424242 !important;
+    padding: 1.5rem 2.8rem 1.5rem 2.4rem;
+    font-size: 1.3rem;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+
+.form-label {
+    font-size: 1.4rem;
+}
+
+.form-select,
+.form-control,
+.form-control:focus {
+    font-size: 1.6rem;
+    border-radius: 0;
+    background-color: #727272;
+    color: #eff;
+    margin-bottom: 2rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+
+.form-control::placeholder {
+    color: #fff;
+    opacity: 0.5;
+}
+
+.form-col {
+    background-color: #727272;
+    border: 1px solid #fff;
+    padding: 0;
+}
+
+.form-col .btn {
+    height: 100%;
+    border: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .form-head {
+        font-size: 1.6rem;
+        padding: 1.3rem 3.5rem;
+    }
+
+    .accordion-button {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .half {
+        width: 60%;
+    }
+}
+
+/* footer */
+#footer {
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center !important;
+    padding-bottom: 10px;
+}
+
+.footer-para {
+    margin-top: 3rem;
+    color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-para {
+        margin: 3rem auto 1.5rem;
+        width: 60ch;
+    }    
+}
